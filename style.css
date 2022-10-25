@@ -7,7 +7,7 @@ October 24, 2022 at 3:16 PM
 
 /* set background image, long with the color and size. Image repeats if table grows too large*/ 
 body{
-    background-image: url("../images/background.gif");
+    background-image: url("background.gif");
     background-size: 100%;
     background-repeat: repeat;
     color: aliceblue;
