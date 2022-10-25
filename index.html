@@ -1,0 +1,70 @@
+<!--
+File: index.html
+HW 3 GUI Assignment: Dynamic Table using JavaScript
+Steven Ceballos, UMass Lowell Computer Science, steven_ceballos@student.uml.edu
+October 24, 2022 at 3:16 PM    
+-->
+
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+      <!-- get needed css and charset linked to the html file-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dyanamic Table</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+      <!--designate row class and form class to allow input from user-->
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form">
+            <h1>Dynamic Table</h1>
+      
+              <p>
+                Enter four numbers to generate a dynamic multiplication table.<br><br>
+              </p>
+              <!-- here is where the input text boxes ar located. Each has it's own label and associated id. There is also a span for the error text -->
+              <div>
+                  <legend>Please enter the table ranges:</legend>
+                  <label>Minimum row value</label>
+                  <div class="col-md-3 col-md-offset-4">
+                      <input type="text" id="row1" required="required"/>
+                          <span class="row1Text"></span>
+                  </div>   
+                  <br>
+                  <label>Maximum row value</label>
+                  <div class="col-md-3 col-md-offset-4">    
+                      <input type="text" id="row2" required="required" />
+                          <span class="row2Text"></span>
+                  </div> 
+                  <br>
+                  <label>Minimum column value</label>
+                  <div class="col-md-3 col-md-offset-4">
+                      <input type="text" id="col1" required="required" />
+                          <span class="col1Text"></span>
+                  </div>        
+                  <br>
+                  <label>Maximum column value</label> 
+                  <div class="col-md-3 col-md-offset-4">  
+                      <input type="text" id="col2" required="required" />
+                          <span class="col2Text"></span>
+                  </div>
+                  <br>
+              </div>
+              <br>
+              <br>
+
+            </form>
+            <!-- button which will start running the function "generate table"-->
+            <button type="button" onclick="generateTable()">Generate Table</button>
+          </div>
+        </div>
+        </div>
+        <br>
+        <div id="table">
+          <!--placeholder for the table-->
+        </div>
+        <script src="js/table.js"></script>
+    </body>
+</html>

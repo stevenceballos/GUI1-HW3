@@ -1,0 +1,90 @@
+/*
+File: style.css
+HW 3 GUI Assignment: Dynamic Table using JavaScript
+Steven Ceballos, UMass Lowell Computer Science, steven_ceballos@student.uml.edu
+October 24, 2022 at 3:16 PM    
+*/
+
+/* set background image, long with the color and size. Image repeats if table grows too large*/ 
+body{
+    background-image: url("../images/background.gif");
+    background-size: 100%;
+    background-repeat: repeat;
+    color: aliceblue;
+}
+
+/*sets style of header1*/
+h1 {
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: blueviolet;
+}
+
+/*sets style of the paragraph text*/
+p {
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: ivory;
+}
+
+label {
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: ivory;
+}
+/*sets style of the legend text*/
+legend {
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: ivory;
+}
+
+/* sets style of input form, specifically the spacing of the margins */
+.form {
+    margin: auto 0 auto 20px;
+}
+
+/* set margin of input block to leave some space for error message */
+.form input {
+    margin: auto 10px auto 0;
+}
+
+/* set font style of table, such as the font size, weight, and color, and also the border around*/
+table, th, td {
+    font-size: 16px;
+    font-weight: normal;
+    border: 1px solid black;
+    margin: auto;
+    background-color: purple;
+}
+
+/* set each header cell and standard cell to 80px width, along with padding and alignment */
+th, td {
+    width: 80px;
+    padding: 5px;
+    text-align: left;
+}
+
+
+/* set the font color and background color for first row and colnum */
+th, td:nth-child(1) {
+    color: turquoise;
+    background-color: black;
+}
+/*set the button style and color*/
+button{
+    background-color: black;
+    border: none;
+    color: ivory;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/*set the table sytle*/
+tr:nth-child(odd) td:nth-child(2n + 3), tr:nth-child(even) td:nth-child(2n + 2) {
+    background-color: cornflowerblue;
+}
